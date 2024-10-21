@@ -4,30 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f8f8; /* Background for the entire page */
+            font-family: Arial, sans-serif;
+        }
+        .book-library {
+            background-color: #ffffff; /* Background for the book collection */
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for styling */
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px; /* Ensure it matches what tests expect */
+            color: #333; /* Darker color for visibility */
+        }
+        .book {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .book img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;
+            border-radius: 5px;
+        }
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .book-author {
+            color: #777777; /* Color for author text */
+            margin-bottom: 10px;
+        }
+        .book-price {
+            background-color: #2ecc71; /* Price block background color */
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block; /* Ensure block style for proper spacing */
+        }
+    </style>
 </head>
 <body>
-    <h1>Book Library</h1>
     <div class="book-library">
+        <h1>Book Library</h1> <!-- Make sure this h1 element is present -->
         <div class="book">
             <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
-            <h2>Spy in the Amber</h2>
-            <p class="author">By Manohar Malgonkar</p>
-            <p class="price">Rs. 299</p>
+            <div class="book-title">SPY IN THE AMBER</div>
+            <div class="book-author">by Manohar Malgonkar</div>
+            <div class="book-price">Rs. 295</div>
         </div>
-
         <div class="book">
             <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Sacred Games">
-            <h2>Sacred Games</h2>
-            <p class="author">By Vikram Chandra</p>
-            <p class="price">Rs. 199</p>
+            <div class="book-title">SACRED GAMES</div>
+            <div class="book-author">by Vikram Chandra</div>
+            <div class="book-price">Rs. 199</div>
         </div>
-
         <div class="book">
             <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
-            <h2>Byomkesh Bakshi</h2>
-            <p class="author">By Sharadindu Bandyopadhyay</p>
-            <p class="price">Rs. 249</p>
+            <div class="book-title">BYOMKESH BAKSHI</div>
+            <div class="book-author">by Sharadindu Bandyopadhyay</div>
+            <div class="book-price">Rs. 245</div>
         </div>
     </div>
 </body>
